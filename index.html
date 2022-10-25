@@ -3,12 +3,13 @@
 <head>
     <meta charset="utf-8" />
     <title>GD-INSIGHT - Web Components Playground</title>
-    <script type="module" src="https://staging.anywhere.gooddata.com/components/d96366a8366b4db481950eaa2e20eefe.js?auth=sso"></script>
+    <script type="module" src="https://euce1.anywhere.gooddata.com/components/goodsales.js?auth=sso"></script>
 </head>
 <body>
     <menu>
         <a href="./index.html">gd-insight</a>
         <a href="./dashboard.html">gd-dashboard</a>
+        <a href="./local.html">http://localhost:3000</a>
     </menu>
     <section>
         <h2>Configure</h2>
@@ -16,8 +17,19 @@
         <p><label>
             Select insight
             <select id="insight-selector">
-                <option selected value="47c793ff-3f38-438e-888c-e66d23072f16">A line chart</option>
-                <option value="30d1efbd-c2e9-4c0e-b0bf-72b2b8d5ffe2">Pie chart</option>
+                <option selected value="5ed9ec3c-dfc3-4491-a06e-6f543816fecf">A line chart</option>
+                <option value="44f85482-1bfd-41b3-ade2-68905ca6358d">Pie chart</option>
+                <option value="014cab0c-6306-43f0-8459-67ac7207a131">Meter chart</option>
+                <option value="bfa1d7d4-fc55-4b40-bb49-22e2d380ebde">Column chart</option>
+                <option value="37f321a3-d325-4695-95ce-3bede266b083">Bar chart</option>
+                <option value="06bda0e6-f4df-4c35-912a-674c14cdb2ef">Stack chart</option>
+                <option value="028688ad-736c-4940-9007-b189040e45f5">Combo chart</option>
+                <option value="1624b629-b1e6-4915-803c-64f4c854021d">Headline</option>
+                <option value="b0300e93-4576-4714-84d7-8bc4e19c1b00">Scatter chart</option>
+                <option value="306ff2c4-576e-4790-b7b8-d4700e3f04eb">Bubble chart</option>
+                <option value="1e8faaf9-1d34-4520-a8f8-8204a8f2cf9e">Donut chart</option>
+                <option value="2dc86aa6-d90a-457f-be7b-b6fe47234018">Heatmap chart</option>
+                <option value="ac5640fa-697a-4f15-95ed-b474bf9ebb84">Heatmap chart</option>
             </select>
         </label></p>
         <p><label>
@@ -25,6 +37,9 @@
             <select id="locale">
                 <option selected value="en-US">en-US</option>
                 <option value="ja-JP">ja-JP</option>
+                <option value="ru-RU">ru-RU</option>
+                <option value="ZU-Hans">ZU-Hans</option>
+                <option value="invalid">invalid</option>
             </select>
         </label></p>
         <p><label><input type="checkbox" id="show-title"/>Show title</label></p>
@@ -35,7 +50,7 @@
         <gd-insight
                 id="insight"
                 style="height: 500px;"
-                insight="47c793ff-3f38-438e-888c-e66d23072f16"
+                insight="cee380d6-7534-4947-b7a8-b5f3375b6cfe"
         ></gd-insight>
     </section>
     <section>
@@ -90,6 +105,7 @@
                 console.log(eventType, e.detail);
             });
         });
+
     </script>
 </body>
 </html>
